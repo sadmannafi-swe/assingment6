@@ -30,7 +30,7 @@ export default function Hero() {
                 h(
                     "a", {
                         href: "#library",
-                        className: "mt-7 inline-flex w-fit items-center gap-2 rounded-md bg-[#CCFF00] px-5 py-3 text-[10px] font-bold uppercase tracking-wide text-[#000000] transition hover:bg-[#CCFF00]",
+                        className: "mt-7 inline-flex w-fit items-center gap-2 rounded-md bg-[#CCFF00] px-5 py-3 text-[10px] font-bold uppercase tracking-wide text-black transition hover:bg-[#CCFF00]",
                     },
                     h("span", null, "↓"),
                     "Browse Workouts",
