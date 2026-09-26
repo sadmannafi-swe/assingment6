@@ -19,9 +19,9 @@ export default function Hero() {
                     "h1", {
                         className: "font-display mt-4 text-5xl font-bold uppercase leading-[0.9] tracking-tight md:text-7xl",
                     },
-                    "TRAIN WITH INTENT.",
+                    h("span", { className: "whitespace-nowrap" }, "TRAIN WITH INTENT. LOG"),
                     h("br"),
-                    "LOG EVERY SET.",
+                    h("span", { className: "whitespace-nowrap" }, "EVERY SET."),
                 ),
                 h(
                     "p", { className: "mt-5 max-w-[510px] text-xs leading-6 text-[#858b95] md:text-sm" },
