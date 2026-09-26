@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, startTransition, useContext, useEffect, useState } from "react";
 import {
   getPlan,
   getSaved,
@@ -20,10 +20,12 @@ export function FitlogProvider({ children }) {
   const [toast, setToast] = useState("");
 
   useEffect(() => {
-    setPlan(getPlan());
-    setSaved(getSaved());
-    setDone(getDone());
-    setHydrated(true);
+    startTransition(() => {
+      setPlan(getPlan());
+      setSaved(getSaved());
+      setDone(getDone());
+      setHydrated(true);
+    });
   }, []);
 
   useEffect(() => {

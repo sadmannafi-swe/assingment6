@@ -13,7 +13,7 @@ export default function EmptyPlan({ savedTab }) {
 
       <Link
         href="/"
-        className="mt-5 rounded-md bg-[#ccff00] px-5 py-3 text-[9px] font-bold uppercase text-black"
+        className="mt-5 rounded-md bg-[#CCFF00] px-5 py-3 text-[9px] font-bold uppercase text-black"
       >
         Go to workouts
       </Link>

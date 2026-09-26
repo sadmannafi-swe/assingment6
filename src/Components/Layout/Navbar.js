@@ -22,7 +22,7 @@ export default function Navbar() {
           <Link
             href="/"
             className={`rounded-full px-5 py-2 text-[11px] font-medium ${
-              workoutActive ? "bg-[#1c290d] text-[#ccff00]" : "text-[#8a9099] hover:text-white"
+              workoutActive ? "bg-[#1A2312] text-[#CCFF00]" : "text-[#8a9099] hover:text-white"
             }`}
           >
             Workout
@@ -31,7 +31,7 @@ export default function Navbar() {
           <Link
             href="/my-plan"
             className={`rounded-full px-5 py-2 text-[11px] font-medium ${
-              planActive ? "bg-[#1c290d] text-[#ccff00]" : "text-[#8a9099] hover:text-white"
+              planActive ? "bg-[#1A2312] text-[#CCFF00]" : "text-[#8a9099] hover:text-white"
             }`}
           >
             My Plan
@@ -62,7 +62,7 @@ export default function Navbar() {
           <Link
             href="/"
             className={`rounded-full px-5 py-1.5 text-[10px] ${
-              workoutActive ? "bg-[#1c290d] text-[#ccff00]" : "text-[#858b94]"
+              workoutActive ? "bg-[#1A2312] text-[#CCFF00]" : "text-[#858b94]"
             }`}
           >
             Workout
@@ -71,7 +71,7 @@ export default function Navbar() {
           <Link
             href="/my-plan"
             className={`rounded-full px-5 py-1.5 text-[10px] ${
-              planActive ? "bg-[#1c290d] text-[#ccff00]" : "text-[#858b94]"
+              planActive ? "bg-[#1A2312] text-[#CCFF00]" : "text-[#858b94]"
             }`}
           >
             My Plan

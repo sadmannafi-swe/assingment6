@@ -4,16 +4,17 @@ import WorkoutDetails from "@/Components/workout/WorkoutDetails";
 
 export default async function WorkoutDetailsPage({ params }) {
   const { id } = await params;
+  let workout;
 
   try {
-    const workout = await getWorkout(id);
-
-    if (!workout || !workout.id) {
-      notFound();
-    }
-
-    return <WorkoutDetails workout={workout} />;
+    workout = await getWorkout(id);
   } catch {
     notFound();
   }
+
+  if (!workout || !workout.id) {
+    notFound();
+  }
+
+  return <WorkoutDetails workout={workout} />;
 }

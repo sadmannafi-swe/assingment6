@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <section className="container-fit flex min-h-[70vh] items-center justify-center py-16">
@@ -14,12 +16,12 @@ export default function NotFound() {
           The page you are looking for does not exist or may have been moved.
         </p>
 
-        <a
+        <Link
           href="/"
           className="mt-8 inline-flex rounded-lg bg-[#ccff00] px-6 py-3 text-sm font-bold text-black transition hover:brightness-95"
         >
           Back to Home
-        </a>
+        </Link>
       </div>
     </section>
   );
